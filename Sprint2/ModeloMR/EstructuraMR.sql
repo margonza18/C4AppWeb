@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `bd_g53`.`usuarios` (
   `persona_id` INT NOT NULL,
   `rol_id` INT NOT NULL,
   PRIMARY KEY (`id`),
-    CONSTRAINT `fk_usuarios_personas`
+  CONSTRAINT `fk_usuarios_personas`
     FOREIGN KEY (`persona_id`)
     REFERENCES `bd_g53`.`personas` (`id`)
     ON DELETE NO ACTION
@@ -238,20 +238,6 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `bd_g53`.`registros_servicios`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `bd_g53`.`registros_servicios` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `codigo` VARCHAR(100) NULL,
-  `nombre` VARCHAR(45) NULL,
-  `descripcion` VARCHAR(100) NULL,
-  `valor` DOUBLE NULL,
-  `estado` BIT(1) NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `bd_g53`.`bitacoras_facturas`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `bd_g53`.`bitacoras_facturas` (
@@ -297,9 +283,52 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `bd_g53`.`notificaciones`
+-- Table `bd_g53`.`registros_servicios`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `bd_g53`.`notificaciones` (
+CREATE TABLE IF NOT EXISTS `bd_g53`.`registros_servicios` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `codigo` VARCHAR(100) NULL,
+  `nombre` VARCHAR(45) NULL,
+  `descripcion` VARCHAR(100) NULL,
+  `valor` DOUBLE NULL,
+  `estado` BIT(1) NULL,
+  `registros_facturas_id` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  CONSTRAINT `fk_registros_servicios_registros_facturas1`
+    FOREIGN KEY (`registros_facturas_id`)
+    REFERENCES `bd_g53`.`registros_facturas` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `bd_g53`.`servicios_adicionales`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `bd_g53`.`servicios_adicionales` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `mes_cobro` DOUBLE NULL,
+  `estado` BIT(1) NULL,
+  `registro_servicio_id` INT NOT NULL,
+  `tipo_inmueble_id` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  CONSTRAINT `fk_servicios_adicionales_registros_servicios1`
+    FOREIGN KEY (`registro_servicio_id`)
+    REFERENCES `bd_g53`.`registros_servicios` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_servicios_adicionales_tipos_inmuebles1`
+    FOREIGN KEY (`tipo_inmueble_id`)
+    REFERENCES `bd_g53`.`tipos_inmuebles` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `bd_g53`.`generar_notificaciones`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `bd_g53`.`generar_notificaciones` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `titulo` VARCHAR(45) NULL,
   `contenido` VARCHAR(100) NULL,
@@ -308,30 +337,9 @@ CREATE TABLE IF NOT EXISTS `bd_g53`.`notificaciones` (
   `estado` BIT(1) NULL,
   `usuario_administrador_id` INT NOT NULL,
   PRIMARY KEY (`id`),
-   CONSTRAINT `fk_notificaciones_usuarios1`
+  CONSTRAINT `fk_notificaciones_usuarios10`
     FOREIGN KEY (`usuario_administrador_id`)
     REFERENCES `bd_g53`.`usuarios` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `bd_g53`.`Registros_facturas_registros_servicios`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `bd_g53`.`Registros_facturas_registros_servicios` (
-  `idRegistro_factura_registro_servicio` INT NOT NULL,
-  `registro_servicio_id` INT NOT NULL,
-  `registro_factura_id` INT NOT NULL,
-  PRIMARY KEY (`idRegistro_factura_registro_servicio`),
-  CONSTRAINT `fk_Registros_facturas_registros_servicios_registros_servicios1`
-    FOREIGN KEY (`registro_servicio_id`)
-    REFERENCES `bd_g53`.`registros_servicios` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Registros_facturas_registros_servicios_registros_facturas1`
-    FOREIGN KEY (`registro_factura_id`)
-    REFERENCES `bd_g53`.`registros_facturas` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;

@@ -1,0 +1,38 @@
+package com.unab.BackendSqlG53.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.unab.BackendSqlG53.Entity.PermisosRoles;
+import com.unab.BackendSqlG53.IService.IPermisosRolesService;
+
+@Service
+public class PermisosRolesService implements IPermisosRolesService{
+
+	@Override
+	public List<PermisosRoles> all() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Optional<PermisosRoles> findById(Integer id) {
+		// TODO Auto-generated method stub
+		return Optional.empty();
+	}
+
+	@Override
+	public PermisosRoles save(PermisosRoles permisosRoles) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

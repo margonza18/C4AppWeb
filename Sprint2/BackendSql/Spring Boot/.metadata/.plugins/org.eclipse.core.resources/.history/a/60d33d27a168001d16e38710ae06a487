@@ -1,0 +1,10 @@
+package com.unab.BackendSqlG53.Service;
+
+import org.springframework.stereotype.Service;
+
+import com.unab.BackendSqlG53.IService.IRegistrosServiciosService;
+
+@Service
+public class RegistrosServicios implements IRegistrosServiciosService{
+
+}

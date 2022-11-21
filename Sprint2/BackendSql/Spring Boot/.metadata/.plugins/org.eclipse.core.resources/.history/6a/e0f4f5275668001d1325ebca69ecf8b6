@@ -1,0 +1,39 @@
+package com.unab.BackendSqlG53.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.unab.BackendSqlG53.Entity.Departamentos;
+import com.unab.BackendSqlG53.IService.IDepartamentosService;
+
+@Service
+public class DepartamentosService implements IDepartamentosService {
+
+	@Override
+	public List<Departamentos> all() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Optional<Departamentos> findById(Integer id) {
+		// TODO Auto-generated method stub
+		return Optional.empty();
+	}
+
+	@Override
+	public Departamentos save(Departamentos departamentos) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

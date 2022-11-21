@@ -1,0 +1,56 @@
+package com.unab.BackendSqlG53.Entity;
+
+import java.sql.Date;
+
+import javax.persistence.Column;
+
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "registros_facturas") 
+public class RegistrosFacturas {
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    
+    @Column(name = "referencia_pago", length = 100)
+    private String ReferenciaPago;
+    
+        @Column(name = "valor_total")
+    private Double ValorTotal;
+        
+    @Column(name = "mes")
+    private Date Mes;
+   
+    @Column(name = "estado")
+    private Boolean Estado;
+    
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+    @JoinColumn(name = "tipo_inmueble_id", nullable = false)
+    private TiposInmuebles TiposInmueblesId;
+    
+
+	
+    
+    
+ 
+    
+    
+    
+    
+
+    
+    
+  
+	
+    
+    
+    
+}

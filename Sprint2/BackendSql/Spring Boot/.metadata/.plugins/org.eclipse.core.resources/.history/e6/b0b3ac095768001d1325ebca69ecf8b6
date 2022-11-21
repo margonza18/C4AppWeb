@@ -1,0 +1,38 @@
+package com.unab.BackendSqlG53.Service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.unab.BackendSqlG53.Entity.TiposInmuebles;
+import com.unab.BackendSqlG53.IService.ITiposInmueblesService;
+
+@Service
+public class TiposInmueblesService implements ITiposInmueblesService {
+
+	@Override
+	public List<TiposInmuebles> all() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Optional<TiposInmuebles> findById(Integer id) {
+		// TODO Auto-generated method stub
+		return Optional.empty();
+	}
+
+	@Override
+	public TiposInmuebles save(TiposInmuebles tiposInmuebles) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

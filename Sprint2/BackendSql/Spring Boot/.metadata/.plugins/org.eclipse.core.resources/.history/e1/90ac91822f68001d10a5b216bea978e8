@@ -1,0 +1,10 @@
+package com.unab.BackendSqlG53.IService;
+
+
+
+
+
+public interface ITiposInmueblesService {
+
+	
+}
