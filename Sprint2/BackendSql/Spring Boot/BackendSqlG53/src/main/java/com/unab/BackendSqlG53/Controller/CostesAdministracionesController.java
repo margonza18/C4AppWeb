@@ -54,7 +54,7 @@ public class CostesAdministracionesController {
 			costesAdministracionesUpdate.setNombre(costesAdministraciones.getNombre());						
 			costesAdministracionesUpdate.setEstado(costesAdministraciones.getEstado());
 			costesAdministracionesUpdate.setValorMes(costesAdministraciones.getValorMes());
-			costesAdministracionesUpdate.setTiposInmueblesId(costesAdministraciones.getTiposInmueblesId());
+			costesAdministracionesUpdate.setTipoInmuebleId(costesAdministraciones.getTipoInmuebleId());
 			return service.save(costesAdministracionesUpdate);
 		}
 

@@ -2,8 +2,6 @@ package com.unab.BackendSqlG53.Controller;
 
 import java.util.Optional;
 
-
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,7 +56,7 @@ public class BitacorasController {
 			bitacorasUpdate.setCodigo(bitacoras.getCodigo());
 			bitacorasUpdate.setDescripcion(bitacoras.getDescripcion());						
 			bitacorasUpdate.setEstado(bitacoras.getEstado());
-			bitacorasUpdate.setInmueblesId(bitacoras.getInmueblesId());
+			bitacorasUpdate.setInmuebleId(bitacoras.getInmuebleId());
 			return service.save(bitacorasUpdate);
 		}
 

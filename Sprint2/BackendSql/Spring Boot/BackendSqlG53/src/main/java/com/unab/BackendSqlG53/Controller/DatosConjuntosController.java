@@ -57,8 +57,8 @@ public class DatosConjuntosController {
 			datosConjuntosUpdate.setTelefono(datosConjuntos.getTelefono());
 			datosConjuntosUpdate.setCorreo(datosConjuntos.getCorreo());
 			datosConjuntosUpdate.setEstado(datosConjuntos.getEstado());
-			datosConjuntosUpdate.setCiudadesId(datosConjuntos.getCiudadesId());
-			datosConjuntosUpdate.setUsuariosId(datosConjuntos.getUsuariosId());
+			datosConjuntosUpdate.setCiudadId(datosConjuntos.getCiudadId());
+			datosConjuntosUpdate.setUsuarioId(datosConjuntos.getUsuarioId());
 			
 			return service.save(datosConjuntosUpdate);
 		}

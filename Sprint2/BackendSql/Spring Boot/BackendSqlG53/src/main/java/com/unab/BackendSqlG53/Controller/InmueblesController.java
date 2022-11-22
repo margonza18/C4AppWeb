@@ -53,9 +53,9 @@ public class InmueblesController {
 			Inmuebles inmueblesUpdate = op.get();
 			inmueblesUpdate.setMatriculaInmobiliaria(inmuebles.getMatriculaInmobiliaria());						
 			inmueblesUpdate.setEstado(inmuebles.getEstado());
-			inmueblesUpdate.setUsuariosId(inmuebles.getUsuariosId());
-			inmueblesUpdate.setCiudadesId(inmuebles.getCiudadesId());
-			inmueblesUpdate.setTiposInmueblesId(inmuebles.getTiposInmueblesId());
+			inmueblesUpdate.setUsuarioId(inmuebles.getUsuarioId());
+			inmueblesUpdate.setCiudadId(inmuebles.getCiudadId());
+			inmueblesUpdate.setTipoInmuebleId(inmuebles.getTipoInmuebleId());
 			
 			return service.save(inmueblesUpdate);
 		}

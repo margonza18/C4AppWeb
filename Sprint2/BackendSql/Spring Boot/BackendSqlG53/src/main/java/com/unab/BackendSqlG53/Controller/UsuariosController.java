@@ -54,8 +54,8 @@ public class UsuariosController {
 			usuariosUpdate.setUsuario(usuarios.getUsuario());
 			usuariosUpdate.setContrasenia(usuarios.getContrasenia());						
 			usuariosUpdate.setEstado(usuarios.getEstado());
-			usuariosUpdate.setPersonasId(usuarios.getPersonasId());
-			usuariosUpdate.setRolesId(usuarios.getRolesId());
+			usuariosUpdate.setPersonaId(usuarios.getPersonaId());
+			usuariosUpdate.setRolId(usuarios.getRolId());
 			return service.save(usuariosUpdate);
 		}
 

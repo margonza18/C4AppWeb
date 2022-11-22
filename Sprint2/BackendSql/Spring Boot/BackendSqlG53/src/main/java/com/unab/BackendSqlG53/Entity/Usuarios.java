@@ -21,30 +21,27 @@ public class Usuarios {
     private Integer id;
     
     @Column(name = "usuario", nullable = true)
-    private String Usuario;
+    private String usuario;
     
     @Column(name = "contrasenia", nullable = true, unique = true)
-    private String Contrasenia;
+    private String contrasenia;
     
    
     @Column(name = "estado", nullable = false)
-    private boolean Estado;
+    private boolean estado;
     
     
     //llave foranea
     
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "persona_id", nullable = false)
-    private Personas PersonasId;
+    private Personas personaId;
     
     
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "rol_id", nullable = false)
-    private Roles RolesId;
-    
-    
-    
-    //Encapsulamiento
+    private Roles rolId;
+
 
 	public Integer getId() {
 		return id;
@@ -57,68 +54,52 @@ public class Usuarios {
 
 
 	public String getUsuario() {
-		return Usuario;
+		return usuario;
 	}
 
 
 	public void setUsuario(String usuario) {
-		Usuario = usuario;
+		this.usuario = usuario;
 	}
 
 
 	public String getContrasenia() {
-		return Contrasenia;
+		return contrasenia;
 	}
 
 
 	public void setContrasenia(String contrasenia) {
-		Contrasenia = contrasenia;
+		this.contrasenia = contrasenia;
 	}
 
 
 	public boolean getEstado() {
-		return Estado;
+		return estado;
 	}
 
 
 	public void setEstado(boolean estado) {
-		Estado = estado;
+		this.estado = estado;
 	}
 
 
-	public Personas getPersonasId() {
-		return PersonasId;
+	public Personas getPersonaId() {
+		return personaId;
 	}
 
 
-	public void setPersonasId(Personas personasId) {
-		PersonasId = personasId;
+	public void setPersonaId(Personas personaId) {
+		this.personaId = personaId;
 	}
 
 
-	public Roles getRolesId() {
-		return RolesId;
+	public Roles getRolId() {
+		return rolId;
 	}
 
 
-	public void setRolesId(Roles rolesId) {
-		RolesId = rolesId;
+	public void setRolId(Roles rolId) {
+		this.rolId = rolId;
 	}
-
-    
-
-
-    
-
-
-    
-  
-
-	
-    
-    
-   
-    
-	
     
 }

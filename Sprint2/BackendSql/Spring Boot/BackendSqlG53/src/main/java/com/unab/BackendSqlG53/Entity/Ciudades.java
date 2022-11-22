@@ -17,22 +17,18 @@ public class Ciudades {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     
-    @Column(name = "codigo", nullable = false, length = 45)
-    private String Codigo;
+    @Column(name = "codigo", nullable = false,unique = true)
+    private String codigo;
     
     @Column(name = "nombre", nullable = true)
-    private String Nombre;
+    private String nombre;
     
     @Column(name = "estado", nullable = false)
-    private Boolean Estado;
+    private Boolean estado;
     
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "departamento_id", nullable = false)
-    private Departamentos DepartamentosId;
-    
-    
-    
-    //
+    private Departamentos departamentoId;
 
 	public Integer getId() {
 		return id;
@@ -43,36 +39,39 @@ public class Ciudades {
 	}
 
 	public String getCodigo() {
-		return Codigo;
+		return codigo;
 	}
 
 	public void setCodigo(String codigo) {
-		Codigo = codigo;
+		this.codigo = codigo;
 	}
 
 	public String getNombre() {
-		return Nombre;
+		return nombre;
 	}
 
 	public void setNombre(String nombre) {
-		Nombre = nombre;
+		this.nombre = nombre;
 	}
 
 	public Boolean getEstado() {
-		return Estado;
+		return estado;
 	}
 
 	public void setEstado(Boolean estado) {
-		Estado = estado;
+		this.estado = estado;
 	}
 
-	public Departamentos getDepartamentosId() {
-		return DepartamentosId;
+	public Departamentos getDepartamentoId() {
+		return departamentoId;
 	}
 
-	public void setDepartamentosId(Departamentos departamentosId) {
-		DepartamentosId = departamentosId;
+	public void setDepartamentoId(Departamentos departamentoId) {
+		this.departamentoId = departamentoId;
 	}
+    
+    
+    
     
     
   

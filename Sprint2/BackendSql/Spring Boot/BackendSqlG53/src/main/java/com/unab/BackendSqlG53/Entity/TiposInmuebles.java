@@ -16,20 +16,16 @@ public class TiposInmuebles {
     private Integer id;
     
     @Column(name = "codigo", nullable = false, unique = true)
-    private String Codigo;
+    private String codigo;
     
     @Column(name = "nombre", nullable = false)
-    private String Nombre;																																													   
+    private String nombre;																																													   
        
     @Column(name = "descripcion", nullable = false)
-    private String Descripcion;
+    private String descripcion;
     
     @Column(name = "estado", nullable = false)
-    private boolean	Estado;
-    
-    
-    //
-    
+    private boolean	estado;
 
 	public Integer getId() {
 		return id;
@@ -40,36 +36,40 @@ public class TiposInmuebles {
 	}
 
 	public String getCodigo() {
-		return Codigo;
+		return codigo;
 	}
 
 	public void setCodigo(String codigo) {
-		Codigo = codigo;
+		this.codigo = codigo;
 	}
 
 	public String getNombre() {
-		return Nombre;
+		return nombre;
 	}
 
 	public void setNombre(String nombre) {
-		Nombre = nombre;
+		this.nombre = nombre;
 	}
 
 	public String getDescripcion() {
-		return Descripcion;
+		return descripcion;
 	}
 
 	public void setDescripcion(String descripcion) {
-		Descripcion = descripcion;
+		this.descripcion = descripcion;
 	}
 
 	public boolean getEstado() {
-		return Estado;
+		return estado;
 	}
 
 	public void setEstado(boolean estado) {
-		Estado = estado;
+		this.estado = estado;
 	}
+    
+    
+
+    
 
 	
 }

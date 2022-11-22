@@ -6,8 +6,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="registrosServicios"/>
+		<item key="selection" value="String"/>
 		<list key="findhistory">
+			<item value="Integer"/>
+			<item value="@Column"/>
+			<item value=" @Column"/>
+			<item value="integer"/>
 			<item value="bitacorasFacturas"/>
 			<item value="BitacorasFacturas"/>
 			<item value="registrosFacturas"/>
@@ -19,12 +23,11 @@
 			<item value="usuarios"/>
 			<item value="Usuarios"/>
 			<item value="ciudades"/>
-			<item value="Ciudades"/>
-			<item value="personas"/>
-			<item value="Personas"/>
-			<item value="generarNotificaciones"/>
 		</list>
 		<list key="replacehistory">
+			<item value="String"/>
+			<item value="@Field"/>
+			<item value="string"/>
 			<item value="registrosServicios"/>
 			<item value="RegistrosServicios"/>
 			<item value="bitacorasFacturas"/>
@@ -37,9 +40,6 @@
 			<item value="ServiciosAdicionales"/>
 			<item value="generarNotificaciones"/>
 			<item value="GenerarNotificaciones"/>
-			<item value="usuarios"/>
-			<item value="Usuarios"/>
-			<item value="tiposInmuebles"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

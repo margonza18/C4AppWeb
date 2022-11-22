@@ -15,20 +15,16 @@ public class Roles {
     private Integer id;
     
     @Column(name = "nombre", nullable = true)
-    private String Nombre;
+    private String nombre;
     
     @Column(name = "descripcion", nullable = false)
-    private String Descripcion;
+    private String descripcion;
     
    
     @Column(name = "estado")
-    private boolean Estado;
-    
-    
+    private boolean estado;
 
 
-  //Encapsulamiento
-    
 	public Integer getId() {
 		return id;
 	}
@@ -40,57 +36,36 @@ public class Roles {
 
 
 	public String getNombre() {
-		return Nombre;
+		return nombre;
 	}
 
 
 	public void setNombre(String nombre) {
-		Nombre = nombre;
+		this.nombre = nombre;
 	}
 
 
 	public String getDescripcion() {
-		return Descripcion;
+		return descripcion;
 	}
 
 
 	public void setDescripcion(String descripcion) {
-		Descripcion = descripcion;
+		this.descripcion = descripcion;
 	}
 
 
 	public boolean getEstado() {
-		return Estado;
+		return estado;
 	}
 
 
 	public void setEstado(boolean estado) {
-		Estado = estado;
+		this.estado = estado;
 	}
     
     
 
-    
-    
 
-    
-    
-   
-    
-    
-    
-    
-
-
-
-    
   
-
-	
-    
-    
-   
-    
-	
-    
 }

@@ -52,8 +52,8 @@ public class PermisosRolesController {
 
 		if (!op.isEmpty()) {
 			PermisosRoles permisosRolesUpdate = op.get();
-			permisosRolesUpdate.setPermisosId(permisosRoles.getPermisosId());
-			permisosRolesUpdate.setRolesId(permisosRoles.getRolesId());						
+			permisosRolesUpdate.setPermisoId(permisosRoles.getPermisoId());
+			permisosRolesUpdate.setRolId(permisosRoles.getRolId());						
 			return service.save(permisosRolesUpdate);
 		}
 

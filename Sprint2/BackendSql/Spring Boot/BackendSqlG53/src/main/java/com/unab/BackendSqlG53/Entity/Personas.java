@@ -17,32 +17,28 @@ public class Personas {
     private Integer id;
     
     @Column(name = "tipo_documento", nullable = false)
-    private String TipoDocumento;
+    private String tipoDocumento;
     
     @Column(name = "documento", nullable = true, unique = true, length = 12)
-    private String Documento;
+    private String documento;
     
     @Column(name = "nombre_completo", nullable = false)
-    private String NombreCompleto;
+    private String nombreCompleto;
     
     @Column(name = "telefono", nullable = false, length = 20 )
-    private String Telefono;
+    private String telefono;
     
     @Column(name = "correo", nullable = false)
-    private String Correo;
+    private String correo;
     
     @Column(name = "fecha_nacimiento", nullable = false)
-    private Date  FechaNacimiento;
+    private Date  fechaNacimiento;
     
     @Column(name = "direccion", nullable = false)
-    private String Direccion;
+    private String direccion;
     
     @Column(name = "estado", nullable = false)
-    private boolean Estado;
-    
-    
-    
-  //Encapsulamiento
+    private boolean estado;
 
 	public Integer getId() {
 		return id;
@@ -53,73 +49,72 @@ public class Personas {
 	}
 
 	public String getTipoDocumento() {
-		return TipoDocumento;
+		return tipoDocumento;
 	}
 
 	public void setTipoDocumento(String tipoDocumento) {
-		TipoDocumento = tipoDocumento;
+		this.tipoDocumento = tipoDocumento;
 	}
 
 	public String getDocumento() {
-		return Documento;
+		return documento;
 	}
 
 	public void setDocumento(String documento) {
-		Documento = documento;
+		this.documento = documento;
 	}
 
 	public String getNombreCompleto() {
-		return NombreCompleto;
+		return nombreCompleto;
 	}
 
 	public void setNombreCompleto(String nombreCompleto) {
-		NombreCompleto = nombreCompleto;
+		this.nombreCompleto = nombreCompleto;
 	}
 
 	public String getTelefono() {
-		return Telefono;
+		return telefono;
 	}
 
 	public void setTelefono(String telefono) {
-		Telefono = telefono;
+		this.telefono = telefono;
 	}
 
 	public String getCorreo() {
-		return Correo;
+		return correo;
 	}
 
 	public void setCorreo(String correo) {
-		Correo = correo;
+		this.correo = correo;
 	}
 
 	public Date getFechaNacimiento() {
-		return FechaNacimiento;
+		return fechaNacimiento;
 	}
 
 	public void setFechaNacimiento(Date fechaNacimiento) {
-		FechaNacimiento = fechaNacimiento;
+		this.fechaNacimiento = fechaNacimiento;
 	}
 
 	public String getDireccion() {
-		return Direccion;
+		return direccion;
 	}
 
 	public void setDireccion(String direccion) {
-		Direccion = direccion;
+		this.direccion = direccion;
 	}
 
 	public boolean getEstado() {
-		return Estado;
+		return estado;
 	}
 
 	public void setEstado(boolean estado) {
-		Estado = estado;
+		this.estado = estado;
 	}
     
     
+    
   
-
-	
     
 	
     

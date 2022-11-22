@@ -16,21 +16,16 @@ public class Permisos {
     private Integer id;
     
     @Column(name = "nombre", nullable = true, length = 45)
-    private String Nombre;
+    private String nombre;
     
     @Column(name = "descripcion", nullable = true, length = 100)
-    private String Descripcion;
+    private String descripcion;
     
     @Column(name = "ruta", nullable = false, length = 100)
-    private String Ruta;
+    private String ruta;
    
     @Column(name = "estado", nullable = false)
-    private boolean Estado;
-    
-    
-    
-    
-  //Encapsulamiento
+    private boolean estado;
 
 	public Integer getId() {
 		return id;
@@ -41,65 +36,39 @@ public class Permisos {
 	}
 
 	public String getNombre() {
-		return Nombre;
+		return nombre;
 	}
 
 	public void setNombre(String nombre) {
-		Nombre = nombre;
+		this.nombre = nombre;
 	}
 
 	public String getDescripcion() {
-		return Descripcion;
+		return descripcion;
 	}
 
 	public void setDescripcion(String descripcion) {
-		Descripcion = descripcion;
+		this.descripcion = descripcion;
 	}
 
 	public String getRuta() {
-		return Ruta;
+		return ruta;
 	}
 
 	public void setRuta(String ruta) {
-		Ruta = ruta;
+		this.ruta = ruta;
 	}
 
 	public boolean getEstado() {
-		return Estado;
+		return estado;
 	}
 
 	public void setEstado(boolean estado) {
-		Estado = estado;
+		this.estado = estado;
 	}
     
     
     
     
-
-	
-    
-
   
-    
-	
-
-    
-   
-    
-    
-    
-    
-
-
-
-    
-  
-
-	
-    
-    
-   
-    
-	
-    
 }

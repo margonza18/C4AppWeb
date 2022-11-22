@@ -54,7 +54,7 @@ public class CiudadesController {
 			ciudadesUpdate.setCodigo(ciudades.getCodigo());
 			ciudadesUpdate.setNombre(ciudades.getNombre());						
 			ciudadesUpdate.setEstado(ciudades.getEstado());
-			ciudadesUpdate.setDepartamentosId(ciudades.getDepartamentosId());
+			ciudadesUpdate.setDepartamentoId(ciudades.getDepartamentoId());
 			return service.save(ciudadesUpdate);
 		}
 

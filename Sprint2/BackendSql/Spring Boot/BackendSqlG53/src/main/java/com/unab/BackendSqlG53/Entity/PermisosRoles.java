@@ -21,11 +21,11 @@ public class PermisosRoles {
   
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "permiso_id", nullable = false)
-    private Permisos  PermisosId;
+    private Permisos  permisoId;
     
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "rol_id", nullable = false)
-    private Roles RolesId;
+    private Roles rolId;
 
 	public Integer getId() {
 		return id;
@@ -35,54 +35,23 @@ public class PermisosRoles {
 		this.id = id;
 	}
 
-	public Permisos getPermisosId() {
-		return PermisosId;
+	public Permisos getPermisoId() {
+		return permisoId;
 	}
 
-	public void setPermisosId(Permisos permisosId) {
-		PermisosId = permisosId;
+	public void setPermisoId(Permisos permisoId) {
+		this.permisoId = permisoId;
 	}
 
-	public Roles getRolesId() {
-		return RolesId;
+	public Roles getRolId() {
+		return rolId;
 	}
 
-	public void setRolesId(Roles rolesId) {
-		RolesId = rolesId;
+	public void setRolId(Roles rolId) {
+		this.rolId = rolId;
 	}
-    
-    
-    
-    
- 
-    
-    
-    
- 
-
-    
-
-  
-    
-	
-
-    
-   
-    
-    
-    
-    
-
-
-
-    
-  
 
 	
-    
-    
-   
-    
 	
     
 }

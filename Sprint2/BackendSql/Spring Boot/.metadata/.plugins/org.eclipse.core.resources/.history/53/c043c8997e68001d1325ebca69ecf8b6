@@ -1,9 +1,0 @@
-package com.unab.BackendSqlG53.IService;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.unab.BackendSqlG53.Entity.GenerarNotificaciones;
-
-public interface IGenerarNotificacionesService  extends JpaRepository<GenerarNotificaciones, Integer>{
-
-}

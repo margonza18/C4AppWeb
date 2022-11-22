@@ -17,25 +17,23 @@ public class Inmuebles {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     
-    @Column(name = "matricula_inmobiliaria", nullable = false)
-    private String MatriculaInmobiliaria;
+    @Column(name = "matricula_inmobiliaria", nullable = false, unique = true)
+    private String matriculaInmobiliaria;
 
     @Column(name = "estado", nullable = false)
-    private Boolean Estado;
+    private Boolean estado;
     
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "usuario_duenio_id", nullable = false)
-    private Usuarios   UsuariosId;
+    private Usuarios   usuarioId;
     
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "ciudad_id", nullable = false)
-    private Ciudades CiudadesId;
+    private Ciudades ciudadId;
     
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "tipo_inmueble_id", nullable = false)
-    private TiposInmuebles TiposInmueblesId ;
-    
-    //Encapsulamiento
+    private TiposInmuebles tipoInmuebleId ;
 
 	public Integer getId() {
 		return id;
@@ -46,57 +44,48 @@ public class Inmuebles {
 	}
 
 	public String getMatriculaInmobiliaria() {
-		return MatriculaInmobiliaria;
+		return matriculaInmobiliaria;
 	}
 
 	public void setMatriculaInmobiliaria(String matriculaInmobiliaria) {
-		MatriculaInmobiliaria = matriculaInmobiliaria;
+		this.matriculaInmobiliaria = matriculaInmobiliaria;
 	}
 
 	public Boolean getEstado() {
-		return Estado;
+		return estado;
 	}
 
 	public void setEstado(Boolean estado) {
-		Estado = estado;
+		this.estado = estado;
 	}
 
-	public Usuarios getUsuariosId() {
-		return UsuariosId;
+	public Usuarios getUsuarioId() {
+		return usuarioId;
 	}
 
-	public void setUsuariosId(Usuarios usuariosId) {
-		UsuariosId = usuariosId;
+	public void setUsuarioId(Usuarios usuarioId) {
+		this.usuarioId = usuarioId;
 	}
 
-	public Ciudades getCiudadesId() {
-		return CiudadesId;
+	public Ciudades getCiudadId() {
+		return ciudadId;
 	}
 
-	public void setCiudadesId(Ciudades ciudadesId) {
-		CiudadesId = ciudadesId;
+	public void setCiudadId(Ciudades ciudadId) {
+		this.ciudadId = ciudadId;
 	}
 
-	public TiposInmuebles getTiposInmueblesId() {
-		return TiposInmueblesId;
+	public TiposInmuebles getTipoInmuebleId() {
+		return tipoInmuebleId;
 	}
 
-	public void setTiposInmueblesId(TiposInmuebles tiposInmueblesId) {
-		TiposInmueblesId = tiposInmueblesId;
+	public void setTipoInmuebleId(TiposInmuebles tipoInmuebleId) {
+		this.tipoInmuebleId = tipoInmuebleId;
 	}
     
     
     
- 
-
-	
     
-  
-
-	
-
-
-
     
     
 }

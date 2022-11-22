@@ -18,25 +18,21 @@ public class CostesAdministraciones {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     
-    @Column(name = "codigo", nullable = false, unique = true)
-    private String Codigo;
+    @Column(name = "codigo", unique = true)
+    private String codigo;
     
     @Column(name = "nombre")
-    private String Nombre;
+    private String nombre;
     
-    @Column(name = "estado", nullable = false)
-    private boolean Estado;
+    @Column(name = "estado")
+    private boolean estado;
     
     @Column(name = "valorMes" )
-    private double ValorMes;
+    private double valorMes;
     
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "tipo_inmueble_id", nullable = false)
-    private TiposInmuebles TiposInmueblesId;
-    
-    
-    
-    //
+    private TiposInmuebles tipoInmuebleId;
 
 	public Integer getId() {
 		return id;
@@ -47,45 +43,48 @@ public class CostesAdministraciones {
 	}
 
 	public String getCodigo() {
-		return Codigo;
+		return codigo;
 	}
 
 	public void setCodigo(String codigo) {
-		Codigo = codigo;
+		this.codigo = codigo;
 	}
 
 	public String getNombre() {
-		return Nombre;
+		return nombre;
 	}
 
 	public void setNombre(String nombre) {
-		Nombre = nombre;
+		this.nombre = nombre;
 	}
 
 	public boolean getEstado() {
-		return Estado;
+		return estado;
 	}
 
 	public void setEstado(boolean estado) {
-		Estado = estado;
+		this.estado = estado;
 	}
 
 	public double getValorMes() {
-		return ValorMes;
+		return valorMes;
 	}
 
 	public void setValorMes(double valorMes) {
-		ValorMes = valorMes;
+		this.valorMes = valorMes;
 	}
 
-	public TiposInmuebles getTiposInmueblesId() {
-		return TiposInmueblesId;
+	public TiposInmuebles getTipoInmuebleId() {
+		return tipoInmuebleId;
 	}
 
-	public void setTiposInmueblesId(TiposInmuebles tiposInmueblesId) {
-		TiposInmueblesId = tiposInmueblesId;
+	public void setTipoInmuebleId(TiposInmuebles tipoInmuebleId) {
+		this.tipoInmuebleId = tipoInmuebleId;
 	}
 
+
+    
+  
 	
     
 }

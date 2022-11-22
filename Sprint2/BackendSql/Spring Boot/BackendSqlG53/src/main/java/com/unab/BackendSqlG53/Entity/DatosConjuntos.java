@@ -18,38 +18,33 @@ public class DatosConjuntos {
     private Integer id;
     
     @Column(name = "codigo", nullable = false,unique = true, length = 45)
-    private String Codigo;
+    private String codigo;
     
-    @Column(name = "nombre", nullable = true, unique = true)
-    private String Nombre;
+    @Column(name = "nombre", nullable = true)
+    private String nombre;
     
     @Column(name = "direccion", nullable = false)
-    private String Direccion;
+    private String direccion;
     
     @Column(name = "telefono", nullable = false, length = 20 )
-    private String Telefono;
+    private String telefono;
     
     @Column(name = "correo", nullable = false)
-    private String Correo;
+    private String correo;
     
     @Column(name = "estado", nullable = false)
-    private boolean Estado;
+    private boolean estado;
     
     
     
     
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "ciudad_id", nullable = false)
-    private Ciudades  CiudadesId;
+    private Ciudades  ciudadId;
     
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "usuario_administrador_id", nullable = false)
-    private Usuarios UsuariosId;
-    
-    
-    
-    
-    //Encapsulamiento
+    private Usuarios usuarioId;
 
 	public Integer getId() {
 		return id;
@@ -60,68 +55,72 @@ public class DatosConjuntos {
 	}
 
 	public String getCodigo() {
-		return Codigo;
+		return codigo;
 	}
 
 	public void setCodigo(String codigo) {
-		Codigo = codigo;
+		this.codigo = codigo;
 	}
 
 	public String getNombre() {
-		return Nombre;
+		return nombre;
 	}
 
 	public void setNombre(String nombre) {
-		Nombre = nombre;
+		this.nombre = nombre;
 	}
 
 	public String getDireccion() {
-		return Direccion;
+		return direccion;
 	}
 
 	public void setDireccion(String direccion) {
-		Direccion = direccion;
+		this.direccion = direccion;
 	}
 
 	public String getTelefono() {
-		return Telefono;
+		return telefono;
 	}
 
 	public void setTelefono(String telefono) {
-		Telefono = telefono;
+		this.telefono = telefono;
 	}
 
 	public String getCorreo() {
-		return Correo;
+		return correo;
 	}
 
 	public void setCorreo(String correo) {
-		Correo = correo;
+		this.correo = correo;
 	}
 
 	public boolean getEstado() {
-		return Estado;
+		return estado;
 	}
 
 	public void setEstado(boolean estado) {
-		Estado = estado;
+		this.estado = estado;
 	}
 
-	public Ciudades getCiudadesId() {
-		return CiudadesId;
+	public Ciudades getCiudadId() {
+		return ciudadId;
 	}
 
-	public void setCiudadesId(Ciudades ciudadesId) {
-		CiudadesId = ciudadesId;
+	public void setCiudadId(Ciudades ciudadId) {
+		this.ciudadId = ciudadId;
 	}
 
-	public Usuarios getUsuariosId() {
-		return UsuariosId;
+	public Usuarios getUsuarioId() {
+		return usuarioId;
 	}
 
-	public void setUsuariosId(Usuarios usuariosId) {
-		UsuariosId = usuariosId;
+	public void setUsuarioId(Usuarios usuarioId) {
+		this.usuarioId = usuarioId;
 	}
+    
+    
+    
+    
     
     
     

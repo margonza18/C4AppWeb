@@ -18,23 +18,18 @@ public class Bitacoras {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     
-    @Column(name = "codigo")
-    private String Codigo;
+    @Column(name = "codigo", unique = true)
+    private String codigo;
     
-    @Column(name = "descripcion", nullable = true)
-    private String Descripcion;
+    @Column(name = "descripcion")
+    private String descripcion;
     
-    @Column(name = "estado", nullable = false)
-    private Boolean Estado;
+    @Column(name = "estado")
+    private Boolean estado;
     
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "inmueble_id", nullable = false)
-    private Inmuebles InmueblesId;
-    
-    
-    
-    
-    //
+    private Inmuebles inmuebleId;
 
 	public Integer getId() {
 		return id;
@@ -45,38 +40,41 @@ public class Bitacoras {
 	}
 
 	public String getCodigo() {
-		return Codigo;
+		return codigo;
 	}
 
 	public void setCodigo(String codigo) {
-		Codigo = codigo;
+		this.codigo = codigo;
 	}
 
 	public String getDescripcion() {
-		return Descripcion;
+		return descripcion;
 	}
 
 	public void setDescripcion(String descripcion) {
-		Descripcion = descripcion;
+		this.descripcion = descripcion;
 	}
 
 	public Boolean getEstado() {
-		return Estado;
+		return estado;
 	}
 
 	public void setEstado(Boolean estado) {
-		Estado = estado;
+		this.estado = estado;
 	}
 
-	public Inmuebles getInmueblesId() {
-		return InmueblesId;
+	public Inmuebles getInmuebleId() {
+		return inmuebleId;
 	}
 
-	public void setInmueblesId(Inmuebles inmueblesId) {
-		InmueblesId = inmueblesId;
+	public void setInmuebleId(Inmuebles inmuebleId) {
+		this.inmuebleId = inmuebleId;
 	}
     
     
+    
+    
+
   
 	
     

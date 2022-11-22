@@ -37,6 +37,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Gonzalez Bonilla\Desktop\C4AppWeb\Sprint2\g53nosql"/>
+			<item value="C:\Users\Gonzalez Bonilla\Desktop\C4AppWeb\Sprint2\BackendSql\Spring Boot\BackendNoSqlG53"/>
 			<item value="C:\Users\Gonzalez Bonilla\Documents\Cursos\TIC\Desarrollo App Web C4\Semana4 C4W\Sesion1\g53sql"/>
 			<item value="C:\Users\Gonzalez Bonilla\Documents\Cursos\TIC\Desarrollo App Web C4\Semana3 C4W\Sesion4\g53sql"/>
 			<item value="C:\Users\Gonzalez Bonilla\Desktop\C4AppWeb\Sprint2\g53sql"/>
