@@ -1,0 +1,1522 @@
+{
+	"info": {
+		"_postman_id": "344bf62b-7bfd-4e9a-8bd7-ae9c998bf0b6",
+		"name": "API NoSQL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23891169"
+	},
+	"item": [
+		{
+			"name": "Bitacoras",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/binnacles",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"binnacles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/binnacles/637ccd382d12b30b7d5fc443",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"binnacles",
+								"637ccd382d12b30b7d5fc443"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": \"codigo4\",\r\n    \"descripcion\":\"fgd\",\r\n    \"estado\":1,\r\n    \"inmuebleId\":{\r\n        \"id\":\"637ccc562d12b30b7d5fc43f\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/binnacles",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"binnacles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": \"codigoprueba\",\r\n    \"descripcion\":\"fgd\",\r\n    \"estado\":1,\r\n    \"inmuebleId\":{\r\n        \"id\":\"637ccc562d12b30b7d5fc43f\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/binnacles/637ccd382d12b30b7d5fc443",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"binnacles",
+								"637ccd382d12b30b7d5fc443"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/binnacles/637ccd4e2d12b30b7d5fc446",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"binnacles",
+								"637ccd4e2d12b30b7d5fc446"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ciudades",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleParameters/cities",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleParameters",
+								"cities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleParameters/cities/637ccb532d12b30b7d5fc43b",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleParameters",
+								"cities",
+								"637ccb532d12b30b7d5fc43b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"codigo\": \"4\",\r\n \"nombre\": \"pitalito\",\r\n \"estado\":1,\r\n \"departamentoId\":{\r\n    \"id\":\"637cc73b2d12b30b7d5fc427\"\r\n }\r\n \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModuleParameters/cities",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleParameters",
+								"cities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"codigo\": \"CodigoPrueba\",\r\n \"nombre\": \"pitalito\",\r\n \"estado\":1,\r\n \"departamentoId\":{\r\n    \"id\":\"637cc73b2d12b30b7d5fc427\"\r\n }\r\n \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModuleParameters/cities/637ccb532d12b30b7d5fc43b",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleParameters",
+								"cities",
+								"637ccb532d12b30b7d5fc43b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleParameters/cities/637ccb632d12b30b7d5fc43e",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleParameters",
+								"cities",
+								"637ccb632d12b30b7d5fc43e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Costes Administraciones",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleParameters/administrationCost",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleParameters",
+								"administrationCost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleParameters/administrationCost/637ccde92d12b30b7d5fc447",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleParameters",
+								"administrationCost",
+								"637ccde92d12b30b7d5fc447"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"codigo\":\"Codigo4\",\r\n \"nombre\": \"rg\",\r\n \"valorMes\": 548000,\r\n \"estado\": 1,\r\n \"tipoInmuebleId\":{\r\n    \"id\":\"637cca9a2d12b30b7d5fc438\"\r\n }\r\n \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModuleParameters/administrationCost",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleParameters",
+								"administrationCost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"codigo\":\"CodigoPrueba\",\r\n \"nombre\": \"rg\",\r\n \"valorMes\": 548000,\r\n \"estado\": 1,\r\n \"tipoInmuebleId\":{\r\n    \"id\":\"637cca9a2d12b30b7d5fc438\"\r\n }\r\n \r\n}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModuleParameters/administrationCost/637ccde92d12b30b7d5fc447",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleParameters",
+								"administrationCost",
+								"637ccde92d12b30b7d5fc447"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleParameters/administrationCost/637ccdf32d12b30b7d5fc44a",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleParameters",
+								"administrationCost",
+								"637ccdf32d12b30b7d5fc44a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Datos Conjuntos",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/jointsData",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"jointsData"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/jointsData/637cceb02d12b30b7d5fc44b",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"jointsData",
+								"637cceb02d12b30b7d5fc44b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": \"Cod4\",\r\n    \"nombre\": \"estadent\",\r\n    \"direccion\": \"calle 10-5a\",\r\n    \"telefono\": \"3138787\",\r\n    \"correo\": \"estadent@.com\",\r\n    \"estado\": 1,\r\n    \"ciudadId\":{\r\n        \"id\": \"637ccb532d12b30b7d5fc43b\"\r\n },\r\n    \"usuarioId\":{\r\n        \"id\": \"637cc9df2d12b30b7d5fc433\"\r\n }\r\n \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/jointsData",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"jointsData"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": \"CodPrueba\",\r\n    \"nombre\": \"estadent\",\r\n    \"direccion\": \"calle 10-5a\",\r\n    \"telefono\": \"3138787\",\r\n    \"correo\": \"estadent@.com\",\r\n    \"estado\": 1,\r\n    \"ciudadId\":{\r\n        \"id\": \"637ccb532d12b30b7d5fc43b\"\r\n },\r\n    \"usuarioId\":{\r\n        \"id\": \"637cc9df2d12b30b7d5fc433\"\r\n }\r\n \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/jointsData/637cceb02d12b30b7d5fc44b",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"jointsData",
+								"637cceb02d12b30b7d5fc44b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/jointsData/637ccebe2d12b30b7d5fc44e",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"jointsData",
+								"637ccebe2d12b30b7d5fc44e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Departamentos",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleParameters/departments",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleParameters",
+								"departments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleParameters/departments/637cc73b2d12b30b7d5fc427",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleParameters",
+								"departments",
+								"637cc73b2d12b30b7d5fc427"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"codigo\":\"CodDepartamento4\",\r\n \"nombre\": \"nariño\",\r\n \"estado\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModuleParameters/departments",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleParameters",
+								"departments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"codigo\": \"CodDepartamentoPrueba\",\r\n \"nombre\": \"guaviare\",\r\n \"estado\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModuleParameters/departments/637cc73b2d12b30b7d5fc427",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleParameters",
+								"departments",
+								"637cc73b2d12b30b7d5fc427"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleParameters/departments/637cc74b2d12b30b7d5fc42a",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleParameters",
+								"departments",
+								"637cc74b2d12b30b7d5fc42a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inmuebles",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/estate",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"estate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/estate/637ccc562d12b30b7d5fc43f",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"estate",
+								"637ccc562d12b30b7d5fc43f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"matriculaInmobiliaria\": \"matriculaInmobiliaria4\",\r\n    \"estado\": 1,\r\n    \"ciudadId\": {\r\n        \"id\":\"637ccb532d12b30b7d5fc43b\"\r\n },\r\n    \"tipoInmuebleId\":{\r\n        \"id\":\"637cca9a2d12b30b7d5fc438\"\r\n },\r\n   \"usuarioId\":{\r\n        \"id\":\"637cc9df2d12b30b7d5fc433\"\r\n }\r\n \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/estate",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"estate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"matriculaInmobiliaria\": \"matriculaInmobiliariaPrueba\",\r\n    \"estado\": 1,\r\n    \"ciudadId\": {\r\n        \"id\":\"637ccb532d12b30b7d5fc43b\"\r\n },\r\n    \"tipoInmuebleId\":{\r\n        \"id\":\"637cca9a2d12b30b7d5fc438\"\r\n },\r\n   \"usuarioId\":{\r\n        \"id\":\"637cc9df2d12b30b7d5fc433\"\r\n }\r\n \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/estate/637ccc562d12b30b7d5fc43f",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"estate",
+								"637ccc562d12b30b7d5fc43f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/estate/637ccc652d12b30b7d5fc442",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"estate",
+								"637ccc652d12b30b7d5fc442"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Permisos",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/permissions",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"permissions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/permissions/637cc8132d12b30b7d5fc42b",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"permissions",
+								"637cc8132d12b30b7d5fc42b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"nombre\": \"Nombre4\",\r\n \"descripcion\": \"tiene el permiso de ver la vista de los roles quer existen \",\r\n \"ruta\": \"htttps/jhbhj\",\r\n \"estado\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/permissions",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"permissions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"nombre cambio\",\r\n    \"descripcion\": \"tiene el permiso de ver la vista administrativa \",\r\n    \"estado\": 1,\r\n    \"ruta\": \"htttps/jhbhj\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/permissions/637cc8132d12b30b7d5fc42b",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"permissions",
+								"637cc8132d12b30b7d5fc42b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/permissions/637cc8252d12b30b7d5fc42e",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"permissions",
+								"637cc8252d12b30b7d5fc42e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Permisos Roles",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/permissionsRoles",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"permissionsRoles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/permissionsRoles/637cc8132d12b30b7d5fc42b",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"permissionsRoles",
+								"637cc8132d12b30b7d5fc42b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"permisoId\": {\r\n    \"id\":\"637cc8132d12b30b7d5fc42b\"\r\n },\r\n \"rolId\": {\r\n    \"id\":\"637cc68e2d12b30b7d5fc423\"\r\n }\r\n\r\n\r\n \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/permissionsRoles",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"permissionsRoles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"permisoId\": {\r\n    \"id\":\"637cc8132d12b30b7d5fc42b\"\r\n },\r\n \"rolId\": {\r\n    \"id\":\"637cc6942d12b30b7d5fc424\"\r\n }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/permissionsRoles/637cc8132d12b30b7d5fc42b",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"permissionsRoles",
+								"637cc8132d12b30b7d5fc42b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/permissionsRoles/637cc8c62d12b30b7d5fc432",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"permissionsRoles",
+								"637cc8c62d12b30b7d5fc432"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Personas",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/persons",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"persons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/persons/637cc5e72d12b30b7d5fc421",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"persons",
+								"637cc5e72d12b30b7d5fc421"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoDocumento\": \"CC\",\r\n    \"documento\": \"Documento4\",\r\n    \"nombreCompleto\": \"ariel Gonzalez\",\r\n    \"telefono\": 313491,\r\n    \"correo\": \"ariel@gmail.com\",\r\n    \"fechaNacimiento\": 12,\r\n    \"direccion\": \"calle 56\",\r\n    \"estado\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/persons",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"persons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoDocumento\": \"CC\",\r\n    \"documento\": \"Documento5\",\r\n    \"nombreCompleto\": \"ariel Gonzalez\",\r\n    \"telefono\": 313491,\r\n    \"correo\": \"ariel@gmail.com\",\r\n    \"fechaNacimiento\": 12,\r\n    \"direccion\": \"calle 56\",\r\n    \"estado\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/persons/637cc5e72d12b30b7d5fc421",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"persons",
+								"637cc5e72d12b30b7d5fc421"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/persons/637cc5eb2d12b30b7d5fc422",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"persons",
+								"637cc5eb2d12b30b7d5fc422"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Roles",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/roles",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/roles/637cc6982d12b30b7d5fc425",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"roles",
+								"637cc6982d12b30b7d5fc425"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"rol4\",\r\n  \"descripcion\": \"asiss\",\r\n   \"estado\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/roles",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"rolPrueba\",\r\n  \"descripcion\": \"asiss\",\r\n   \"estado\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/roles/637cc6982d12b30b7d5fc425",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"roles",
+								"637cc6982d12b30b7d5fc425"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/roles/637cc69e2d12b30b7d5fc426",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"roles",
+								"637cc69e2d12b30b7d5fc426"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tipos Inmuebles",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/typeEstate",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"typeEstate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/typeEstate/637ccab02d12b30b7d5fc43a",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"typeEstate",
+								"637ccab02d12b30b7d5fc43a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"codigo\":\"Codigo4\",\r\n \"nombre\": \"casa\",\r\n \"descripcion\": \"amplia\",\r\n\"estado\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/typeEstate",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"typeEstate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"codigo\":\"CodigoPrueba\",\r\n \"nombre\": \"casa\",\r\n \"descripcion\": \"amplia\",\r\n\"estado\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/typeEstate/637ccab02d12b30b7d5fc43a",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"typeEstate",
+								"637ccab02d12b30b7d5fc43a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModulePropertiesEstate/typeEstate/637cca9e2d12b30b7d5fc439",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModulePropertiesEstate",
+								"typeEstate",
+								"637cca9e2d12b30b7d5fc439"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get ById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/user/637cc9df2d12b30b7d5fc433",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"user",
+								"637cc9df2d12b30b7d5fc433"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"usuario\": \"Usuario\",\r\n \"contrasenia\": \"clave5\",\r\n   \"estado\": 1,\r\n   \"personaId\": {\r\n       \"id\":\"637cc5da2d12b30b7d5fc41f\"\r\n   },\r\n   \"rolId\": {\r\n       \"id\":\"637cc68e2d12b30b7d5fc423\"\r\n   }\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"usuario\": \"Usuario\",\r\n \"contrasenia\": \"clave3\",\r\n   \"estado\": 1,\r\n   \"personaId\": {\r\n       \"id\":\"637cc5da2d12b30b7d5fc41f\"\r\n   },\r\n   \"rolId\": {\r\n       \"id\":\"637cc68e2d12b30b7d5fc423\"\r\n   }\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/user/637cc9df2d12b30b7d5fc433",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"user",
+								"637cc9df2d12b30b7d5fc433"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/ModuleSecurity/user/637cca252d12b30b7d5fc437",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"ModuleSecurity",
+								"user",
+								"637cca252d12b30b7d5fc437"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
